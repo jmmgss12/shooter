@@ -116,9 +116,9 @@ while game:
         bullets.draw(main_win)
 
 
-        # if lost >= 3:
-        #     main_win.blit(lose, (W//2 - 80, H//2 - 20))
-        #     finish = True
+        if lost >= 10:
+            main_win.blit(lose, (W//2 - 80, H//2 - 20))
+            finish = True
 
         if sprite.spritecollide(ship, ufos, True):
             hp -= 25
